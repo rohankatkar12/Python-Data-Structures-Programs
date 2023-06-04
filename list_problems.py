@@ -1,4 +1,4 @@
-#1.	Write a Python program to sum all the items in a list.
+#1.Write a Python program to sum all the items in a list.
 '''
 s=[2,4,5,3,9,10,11,12]
 res=[]
@@ -9,7 +9,7 @@ res.append(s1)
 print(res)
 '''
 
-#2.	Write a Python program to print  multiplies all the items in a list.
+#2.Write a Python program to print  multiplies all the items in a list.
 '''
 s=[2,4,5,3,6,8,9]
 res=1
@@ -18,7 +18,7 @@ for num in s:
 print(res)
 '''
 
-#3.	Write a Python program to get the largest number from a list.
+#3.Write a Python program to get the largest number from a list.
 '''
 li=[2,7,4,5,8,22,34,54,3,88,6,93]
 li.sort(reverse=True)
@@ -32,7 +32,7 @@ li.sort()
 print(li[0])
 '''
 
-#5.	Write a Python program to count the number of strings where the string length is 2 or more and the first and last character are same from a given list of strings.
+#5.Write a Python program to count the number of strings where the string length is 2 or more and the first and last character are same from a given list of strings.
 #Sample List : ['abc', 'xyz', 'aba', '1221']
 #Expected Result : 2
 '''
@@ -55,7 +55,7 @@ lii.extend(new_li)
 print(lii)
 '''
 
-#7.	Write a Python program to check a list is empty or not.
+#7.Write a Python program to check a list is empty or not.
 '''
 li=[2,4,1,6,3,8,4,7,5,9,6]
 if len(li)>=1:
@@ -64,7 +64,7 @@ else:
     print('list is empty')
 '''
 
-#8.	Write a Python program to clone or copy a list.
+#8.Write a Python program to clone or copy a list.
 '''
 li=['Rohan','Rohit','Omkar','Shubham','Aniket']
 newli=li.copy()
@@ -82,7 +82,7 @@ for words in li:
 print(newli,len(newli))
 '''
 
-#10. Write a Python function that takes two lists and returns True if they have at least one common member
+#10.Write a Python function that takes two lists and returns True if they have at least one common member
 '''
 def funct(a=[],b=[]):
     for i in range(len(a)):
@@ -94,7 +94,7 @@ print(val)
 
 
 
-#11.	Write a Python program to print a specified list after removing the 0th, 4th and 5th elements.
+#11.Write a Python program to print a specified list after removing the 0th, 4th and 5th elements.
 #Sample List : ['Red', 'Green', 'White', 'Black', 'Pink', 'Yellow']
 #Expected Output : ['Green', 'White', 'Black']
 '''
@@ -105,7 +105,7 @@ li.pop(0)
 print(li)
 '''
 
-#12.	Write a Python program to get a list, sorted in increasing order by the last element in each tuple from a given list of non-empty tuples.
+#12.Write a Python program to get a list, sorted in increasing order by the last element in each tuple from a given list of non-empty tuples.
 #Sample List : [(2, 5), (1, 2), (4, 4), (2, 3), (2, 1)]
 #Expected Result : [(2, 1), (1, 2), (2, 3), (4, 4), (2, 5)]
 '''
@@ -125,7 +125,7 @@ print(newli)
 '''
 
 
-#15.	Write a Python program to get the difference between the two lists.
+#15.Write a Python program to get the difference between the two lists.
 '''
 a=['a', 'c', 'e', 'g', 'h', 'i', 'j', 'k', 'l', 'm','x', 'n','r','s']
 b=['b','f','g','h','i','j','k','l',a', 'c', 'e', 'g', 'h', 'i', 'j', 'k', 'l', 'm''o','p','t','u','v','w','y']
@@ -162,7 +162,7 @@ r=a.index('rohan')
 print(r)
 '''
 
-#19.	Write a Python program to append a list to the second list.
+#19.Write a Python program to append a list to the second list.
 '''
 a=['a', 'c', 'e', 'g', 'h', 'i', 'j']
 b=[12,34,5,6,78,9,10]
