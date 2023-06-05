@@ -5,16 +5,19 @@ s='Rohan Gajanan Katkar'
 print(len(s))
 """
 
-
 #2.Write a Python program to get a string from a given string where all occurrences of its first char have been changed to '$', except the first char itself.
 #Sample String : 'restart'
 #Expected Result : 'resta$t'
-"""
-s='initialize'
-new_s=s.replace('i','$')
-res=s[0]+new_s[1:]
-print(res)
-"""
+
+def func(str):
+    s = str
+    new_s = s.replace(s[0], '$')
+    res = s[0] + new_s[1:]
+    print(res) 
+
+func('initialize')
+
+
 
 #3.Write a Python program to get a single string from two given strings, separated by a space and swap the first two characters of each string.
 #Sample String : 'abc', 'xyz'
