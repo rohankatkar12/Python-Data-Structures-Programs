@@ -9,6 +9,7 @@ print(len(s))
 #Sample String : 'restart'
 #Expected Result : 'resta$t'
 
+"""
 def func(str):
     s = str
     new_s = s.replace(s[0], '$')
@@ -16,6 +17,7 @@ def func(str):
     print(res) 
 
 func('initialize')
+"""
 
 
 
