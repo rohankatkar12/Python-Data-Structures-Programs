@@ -54,9 +54,7 @@ show()
 # Decorate to offer for limited period of time
 import datetime
 
-
 def decorator(start, end):
-    
     def prod_deco(fun):
         current_time = datetime.datetime.now().time()
         start_time = datetime.time(start[0], start[1]) #11:58 am
