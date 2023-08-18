@@ -54,12 +54,14 @@
 # Decorate to offer for limited period of time
 import datetime
 
-def decorator():
-    current_time = datetime.datetime.now().time()
-    start_time = datetime.time(12, 13) #11:58 am
-    end_time = datetime.time(12, 14) #12:00 pm
+
+def decorator(start, end):
     
     def prod_deco(fun):
+        current_time = datetime.datetime.now().time()
+        start_time = datetime.time(start[0], start[1]) #11:58 am
+        end_time = datetime.time(end[0], end[1]) #12:00 pm
+
         def inner_deco(product, price):
             if current_time < start_time or end_time <= current_time:
                 return fun(product, price)
@@ -75,14 +77,14 @@ def decorator():
     return prod_deco
 
 
-@decorator()
+# @decorator((12, 31),(12, 32))
 def func(product, price):
     print(product)
     print(f"Price :{price} Rupees")
     
-obj = func("APPLE iPhone 14 (Blue, 128 GB)", 67999)
+# obj = func("APPLE iPhone 14 (Blue, 128 GB)", 67999)
 
+obj = decorator((12, 33),(12, 34))
+obj1 = obj(func)
+obj1("APPLE iPhone 14 (Blue, 128 GB)", 67999)
 
-# obj = decorator()
-# obj1 = obj(func)
-# res = obj1("APPLE iPhone 14 (Blue, 128 GB)", 67999)
